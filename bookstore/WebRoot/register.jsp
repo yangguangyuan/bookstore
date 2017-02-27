@@ -17,7 +17,7 @@
 	<%@include file="menu_search.jsp"%><%--导入导航条与搜索 --%>
 
 	<div id="divcontent">
-		<form action="${pageContext.request.contextPath}/registersuccess.jsp"
+		<form action="${pageContext.request.contextPath}/RegistServlet"
 			method="post">
 			<table width="850px" border="0" cellspacing="0">
 				<tr>
@@ -25,6 +25,10 @@
 						<h1>新会员注册</h1>
 						
 						<table width="70%" border="0" cellspacing="2" class="upline">
+							<tr>
+								<td></td>
+								<td>${msg }</td>
+							</tr>
 							<tr>
 								<td style="text-align:right; width:20%">会员邮箱：</td>
 								<td style="width:40%">

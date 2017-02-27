@@ -42,17 +42,17 @@
 														</td>
 													</tr>
 													<tr>
-														<td>
-															&nbsp;
-														</td>
-														<td style="text-align:left">
-														${msg}
-														</td>
-													</tr>
-													<tr>
 														<td style="text-align:center">
 															<table width="80%" border="0" cellspacing="0"
 																style="margin-top:15px ;margin-left:auto; margin-right:auto">
+																<tr>
+																<td>
+																	&nbsp;
+																</td>
+																<td style="text-align:left">
+																${msg}
+																</td>
+															</tr>
 																<tr>
 																	<td
 																		style="text-align:right; padding-top:5px; width:25%">用户名：</td>

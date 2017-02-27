@@ -9,4 +9,8 @@ public interface UserDao {
 
 	User login(User user);
 
+	Boolean findUserByUsername(String username);
+
+	Boolean regist(User user);
+
 }
