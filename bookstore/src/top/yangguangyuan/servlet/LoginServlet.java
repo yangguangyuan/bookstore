@@ -14,7 +14,11 @@ import top.yangguangyuan.bean.User;
 import top.yangguangyuan.service.UserService;
 
 /**
- * Servlet implementation class LoginServlet
+ * @ClassName: LoginServlet 
+ * @Description: TODO(登录) 
+ * @author yangguangyuan
+ * @date 2017年2月27日 下午6:16:01 
+ *
  */
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

@@ -16,7 +16,12 @@ import top.yangguangyuan.bean.User;
 import top.yangguangyuan.service.UserService;
 
 /**
- * Servlet implementation class RegistServlet
+ * 
+ * @ClassName: RegistServlet 
+ * @Description: TODO(注册) 
+ * @author yangguangyuan
+ * @date 2017年2月27日 下午6:16:15 
+ *
  */
 public class RegistServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

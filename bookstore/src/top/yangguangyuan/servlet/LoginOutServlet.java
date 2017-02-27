@@ -7,7 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LoginOutServlet
+ * @ClassName: LoginOutServlet 
+ * @Description: TODO(退出登录) 
+ * @author yangguangyuan
+ * @date 2017年2月27日 下午6:15:44 
+ *
  */
 public class LoginOutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
