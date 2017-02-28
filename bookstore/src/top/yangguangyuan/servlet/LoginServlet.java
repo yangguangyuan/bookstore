@@ -42,6 +42,7 @@ public class LoginServlet extends HttpServlet {
 			UserService userService = new UserService();
 			User user2 = userService.login(user);
 			if(user2!=null){
+				request.setAttribute("user", user2);
 				request.getRequestDispatcher("/index.jsp").forward(request, response);
 			}else{
 				request.setAttribute("msg", "用户名或密码错误");

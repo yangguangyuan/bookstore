@@ -39,4 +39,14 @@
     <servlet-name>LoginOutServlet</servlet-name>
     <url-pattern>/LoginOutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>modifyUserInfoServlet</display-name>
+    <servlet-name>modifyUserInfoServlet</servlet-name>
+    <servlet-class>top.yangguangyuan.servlet.modifyUserInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>modifyUserInfoServlet</servlet-name>
+    <url-pattern>/modifyUserInfoServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

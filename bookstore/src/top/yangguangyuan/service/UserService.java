@@ -27,4 +27,8 @@ public class UserService {
 		return userDao.regist(user);
 	}
 
+	public Boolean modifyUserInfo(User user) {
+		return userDao.modifyUserInfo(user);
+	}
+
 }

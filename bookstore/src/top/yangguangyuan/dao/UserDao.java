@@ -13,4 +13,6 @@ public interface UserDao {
 
 	Boolean regist(User user);
 
+	Boolean modifyUserInfo(User user);
+
 }
