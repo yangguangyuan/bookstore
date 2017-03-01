@@ -49,4 +49,14 @@
     <servlet-name>modifyUserInfoServlet</servlet-name>
     <url-pattern>/modifyUserInfoServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>showProductByPageServlet</display-name>
+    <servlet-name>showProductByPageServlet</servlet-name>
+    <servlet-class>top.yangguangyuan.servlet.showProductByPageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showProductByPageServlet</servlet-name>
+    <url-pattern>/showProductByPageServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

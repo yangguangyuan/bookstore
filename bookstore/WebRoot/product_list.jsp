@@ -36,6 +36,9 @@
 									<img src="images/productlist.gif" width="100%" height="38" />
 								</div>
 								<table cellspacing="0">
+								<c:foreach>
+									
+								</c:foreach>
 									<tr>
 										<td>
 
