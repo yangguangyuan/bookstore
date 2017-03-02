@@ -8,4 +8,6 @@ public interface BookDao {
 
 	List<Book> findAllBook();
 
+	Book findBookByBid(String bid);
+
 }

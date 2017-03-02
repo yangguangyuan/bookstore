@@ -11,5 +11,8 @@ public class BookService {
 	public List<Book> findAllBook() {
 		return bookDao.findAllBook();
 	}
+	public Book findBookByBid(String bid) {
+		return bookDao.findBookByBid(bid);
+	}
 	
 }

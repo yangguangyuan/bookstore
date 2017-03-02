@@ -23,6 +23,18 @@ public class BookDaoImpl implements BookDao {
 			List<Book> list = runner.query(sql, new BeanListHandler<Book>(Book.class));
 			return list;
 		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	@Override
+	public Book findBookByBid(String bid) {
+		String sql="select * from book where book.bid=?";
+		try {
+			Book query = runner.query(sql, new BeanHandler<Book>(Book.class),bid);
+			return query;
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

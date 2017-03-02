@@ -52,13 +52,13 @@
 											src="images/miniicon3.gif" width="16" height="13" /><font
 											class="bookname">&nbsp;&nbsp;Thinking in java</font>
 
-											<hr />售价：<font color="#FF0000">￥100</font>
-											<hr /> 类别：计算机
+											<hr />售价：<font color="#FF0000">${book.bname}</font>
+											<hr /> 类别：${book.category}
 
 											<hr />
 											<p>
 												<b>内容简介：</b>
-											</p> java 经典书籍</td>
+											</p> ${book.author}</td>
 									</tr>
 								</table></td>
 						</tr>

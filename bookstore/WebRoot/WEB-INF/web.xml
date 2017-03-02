@@ -59,4 +59,14 @@
     <servlet-name>showProductByPageServlet</servlet-name>
     <url-pattern>/showProductByPageServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProductInfo</display-name>
+    <servlet-name>ProductInfo</servlet-name>
+    <servlet-class>top.yangguangyuan.servlet.ProductInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductInfo</servlet-name>
+    <url-pattern>/ProductInfo</url-pattern>
+  </servlet-mapping>
 </web-app>
