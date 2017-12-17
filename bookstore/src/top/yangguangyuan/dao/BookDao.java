@@ -10,4 +10,6 @@ public interface BookDao {
 
 	Book findBookByBid(String bid);
 
+	List<Book> listBook(String category);
+
 }

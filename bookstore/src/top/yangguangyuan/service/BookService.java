@@ -15,4 +15,8 @@ public class BookService {
 		return bookDao.findBookByBid(bid);
 	}
 	
+	public List<Book> listBook(String category){
+		
+		return bookDao.listBook(category);
+	}
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+  <default-config>
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <property name="jdbcUrl">jdbc:mysql:///bookstore</property>
+    <property name="user">root</property>
+    <property name="password">root</property>
+  </default-config>
+
+  <!-- This app is massive! -->
+  <named-config name="oracle"> 
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <property name="jdbcUrl">jdbc:mysql:///bookstore</property>
+    <property name="user">root</property>
+    <property name="password">1234</property>
+  </named-config>
+</c3p0-config>

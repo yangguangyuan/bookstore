@@ -40,5 +40,17 @@ public class BookDaoImpl implements BookDao {
 		}
 		return null;
 	}
+
+	@Override
+	public List<Book> listBook(String category) {
+		String sql="select * from book where book.category=?";
+		try {
+			List<Book> query = runner.query(sql, new BeanListHandler<Book>(Book.class),category);
+			return query;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 	
 }
