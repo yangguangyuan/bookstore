@@ -38,21 +38,21 @@
 
 											<div class="divbookcover">
 												<p>
-													<img src="bookcover/101.jpg"
+													<img src="${book.imgurl}"
 														width="213" height="269" border="0" />
 												</p>
 											</div>
 
 											<div style="text-align:center; margin-top:25px">
 												<a href="cart.jsp">
-													<img src="images/buybutton.gif" border="0" /> 
+													<img src="${book.imgurl}" border="0" /> 
 												</a>
 											</div></td>
 										<td style="padding:20px 5px 5px 5px"><img
 											src="images/miniicon3.gif" width="16" height="13" /><font
-											class="bookname">&nbsp;&nbsp;Thinking in java</font>
+											class="bookname">&nbsp;&nbsp;${book.bname}</font>
 
-											<hr />售价：<font color="#FF0000">${book.bname}</font>
+											<hr />售价：<font color="#FF0000">${book.price}</font>
 											<hr /> 类别：${book.category}
 
 											<hr />

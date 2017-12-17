@@ -6,13 +6,6 @@ package top.yangguangyuan.bean;
  *
  */
 public class User {
-//	uid varchar(100) primary key,
-//	username varchar(100),
-//	password varchar(100),
-//	email varchar(255),
-//	telephone varchar(100),
-//	sex varchar(20),
-//	remark varchar(255) 
 	private String uid;
 	private String username;
 	private String password;

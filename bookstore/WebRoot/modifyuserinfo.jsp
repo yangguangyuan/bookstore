@@ -52,19 +52,19 @@
 					<table cellspacing="0" class="infocontent">
 						<tr>
 							<td>
-								<form action="modifyUserInfoSuccess.jsp" method="post">
-									<input type="hidden" name="id" value="11">
+								<form action="${pageContext.request.contextPath }/modifyUserInfoServlet" method="post">
+									<input type="hidden" name="uid" value="${user.uid }">
 									<table width="100%" border="0" cellspacing="2" class="upline">
 										<tr>
 											<td style="text-align:right; width:20%">会员邮箱：</td>
-											<td style="width:40%; padding-left:20px">tom@123.com</td>
+											<td style="width:40%; padding-left:20px">${user.email }</td>
 											<td>&nbsp;</td>
 
 
 										</tr>
 										<tr>
 											<td style="text-align:right">会员名：</td>
-											<td style="padding-left:20px">tom</td>
+											<td style="padding-left:20px">${user.username }</td>
 											<td>&nbsp;</td>
 										</tr>
 										<tr>
@@ -77,12 +77,12 @@
 										</tr>
 										<tr>
 											<td style="text-align:right">性别：</td>
-											<td colspan="2">&nbsp;&nbsp;女</td>
+											<td colspan="2">&nbsp;&nbsp;${user.sex }</td>
 										</tr>
 										<tr>
 											<td style="text-align:right">联系方式：</td>
 											<td colspan="2"><input name="telephone" type="text"
-												value="110" class="textinput" />
+												value="${user.telephone }" class="textinput" />
 											</td>
 										</tr>
 

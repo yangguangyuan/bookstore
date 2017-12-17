@@ -31,17 +31,17 @@ public class ProductInfo extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String bid = request.getParameter("bid");
 		if(null==bid){
-			request.setAttribute("msg", "商品id不能为空");
+			request.getSession().setAttribute("msg", "商品id不能为空");
 			return;
 		}
 		
 		BookService bookService = new BookService();
 		Book book = bookService.findBookByBid(bid);
-		if(book!=null){
-			request.setAttribute("msg", "商品id不能为空");
+		if(null==book){
+			request.getSession().setAttribute("msg", "未查询到该商品");
 			return;
 		}else{
-			request.setAttribute("book", book);
+			request.getSession().setAttribute("book", book);
 			request.getRequestDispatcher("/product_info.jsp").forward(request, response);
 		}
 	}

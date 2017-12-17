@@ -43,13 +43,13 @@
 	
 												<div class="divbookpic">
 													<p>
-														<a href="${pageContext.request.contextPath}/ProductInfo"><img src="${pageContext.request.contextPath}/${book.imgurl}" width="115"
+														<a href="${pageContext.request.contextPath}/ProductInfo?bid=${book.bid}"><img src="${pageContext.request.contextPath}/${book.imgurl}" width="115"
 															height="129" border="0" /> </a>
 													</p>
 												</div>
 	
 												<div class="divlisttitle">
-													<a href="${pageContext.request.contextPath}/ProductInfo">书名:${book.bname}<br />售价:${book.price} </a>
+													<a href="${pageContext.request.contextPath}/ProductInfo?bid=${book.bid}">书名:${book.bname}<br />售价:${book.price} </a>
 												</div>
 											</td>
 											<c:if test="${yang.count%5==0}">

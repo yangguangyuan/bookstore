@@ -1,11 +1,14 @@
 package top.yangguangyuan.servlet;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.beanutils.BeanUtils;
 
 import top.yangguangyuan.bean.User;
 import top.yangguangyuan.service.UserService;
@@ -25,8 +28,14 @@ public class modifyUserInfoServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		User user = (User) request.getAttribute("user");
+		User user = new User();
 		UserService userService = new UserService();
+		try {
+			BeanUtils.populate(user, request.getParameterMap());
+		} catch (IllegalAccessException | InvocationTargetException e) {
+			e.printStackTrace();
+		}
+		
 		Boolean modifyUserInfo = userService.modifyUserInfo(user);
 		if(modifyUserInfo){
 			request.getSession().invalidate();
